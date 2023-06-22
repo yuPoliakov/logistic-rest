@@ -1,0 +1,27 @@
+service: logistic-rest
+
+useDotenv: true
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  stage: prod
+  region: ${env:NUXT_AWS_REGION}
+  lambdaHashingVersion: 20201221
+  environment: 
+    NODE_ENV: prod
+  apiGateway:
+    shouldStartNameWithService: true
+
+functions:
+  nuxt:
+    handler: .output/server/index.handler
+    events:
+      - httpApi: '*'
+
+plugins:
+  - serverless-offline
+
+custom:
+  serverless-offline:
+    noPrependStageInUrl: true

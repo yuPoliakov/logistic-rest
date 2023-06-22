@@ -1,0 +1,29 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "deploy": "npm run build && sls deploy",
+    "start-sls": "npm run build && sls offline start"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.7.0",
+    "@types/node": "^18",
+    "mongoose": "^7.2.0",
+    "nuxt": "^3.5.1",
+    "serverless-offline": "^12.0.4"
+  },
+  "dependencies": {
+    "migrate": "^1.8.0",
+    "migrate-mongoose": "^4.0.0",
+    "nanoid": "^4.0.2",
+    "node-migrate": "^0.1.0",
+    "serverless-apigw-binary": "^0.4.4",
+    "serverless-http": "^3.2.0",
+    "usemodal-vue3": "^0.3.7"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "lastRun": "1685003389125-trucks.js",
+  "migrations": [
+    {
+      "title": "1685003385174-routes.js",
+      "timestamp": 1685003416785
+    },
+    {
+      "title": "1685003389125-trucks.js",
+      "timestamp": 1685003416786
+    }
+  ]
+}
